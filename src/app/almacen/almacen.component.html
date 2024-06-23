@@ -1,0 +1,11 @@
+<!-- src/app/almacen/almacen.component.html -->
+<div>
+    <h2>Calculadora de Descuentos</h2>
+    <label for="precioUnitario">Precio Unitario:</label>
+    <input type="number" [(ngModel)]="precioUnitario" id="precioUnitario">
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" [(ngModel)]="cantidad" id="cantidad">
+    <button (click)="calcularTotal()">Calcular Total</button>
+    <p>Total a pagar: {{ total  }}</p>
+  </div>
+  

@@ -1,0 +1,11 @@
+<!-- src/app/notas/notas.component.html -->
+<div>
+    <h2>Calculadora de Promedio</h2>
+    <div *ngFor="let nota of notas; let i = index">
+      <label for="nota{{i}}">Nota {{i + 1}}:</label>
+      <input type="number" [(ngModel)]="notas[i]" id="nota{{i}}">
+    </div>
+    <button (click)="calcularPromedio()">Calcular Promedio</button>
+    <p>Promedio: {{ promedio }}</p>
+  </div>
+  
